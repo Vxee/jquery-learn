@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn-slideup").click(function(){
+                $("#id-div-slide").slideUp("fast");
+                //$("#p1").css("color","red").slideUp(2000).slideDown(2000);
+            });
+            $("#btn-slidedown").click(function(){
+                $("#id-div-slide").slideDown("fast");
+            });
+        });
+
+        </script>
+    </head>
+    <body>
+        <h2>页面滑动操作</h2>
+        <hr><br>
+        <div id="id-div-slide">
+            <h3 class="h3-text">效果</h3>
+            <h3 class="h3-text">函数</h3>
+            <p id="p1">lalalalallala</p>
+        </div>
+        <button id="btn-slideup">隐藏</button>
+        <button id="btn-slidedown">显示</button>
+    </body>
+</html>
